@@ -9,8 +9,8 @@ cd $WEBOS_DESKTOP_PROJECT
 . ./scripts/common/envsetup.sh
 
 SRC="
-db8
 pmloglib
+db8
 "
 
 DEVELOPER=false
