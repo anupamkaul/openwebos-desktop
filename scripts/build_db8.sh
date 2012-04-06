@@ -2,6 +2,6 @@
 
 . ./common/envsetup.sh
 
-. ./common/qmakesetup.sh
+. ./common/makesetup.sh
 
 build_target $WEBOS_DESKTOP_ROOT $1 $2
