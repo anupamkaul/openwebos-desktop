@@ -9,6 +9,8 @@ PROCCOUNT=$3
 MAKENAME=$4
 MAKEINSTALL=$5
 
+
+
 if [ -n "$MAKENAME" ] ; then
    MAKENAME=.$MAKENAME
 fi
@@ -19,7 +21,7 @@ fi
 
 cd $ROOT/$NAME
 
-make -f Makefile$MAKENAME -j$PROCCOUNT
+make -f Makefile.Ubuntu -j$PROCCOUNT
 
 if [ "$?" != "0" ] ; then
    echo Failed to make $NAME

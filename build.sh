@@ -10,6 +10,8 @@ cd $WEBOS_DESKTOP_PROJECT
 
 SRC="
 pmloglib
+cjson
+luna-service2
 db8
 "
 

@@ -13,6 +13,7 @@ done
 echo $WEBOS_DESKTOP_ROOT
 
 export LUNA_STAGING=$WEBOS_DESKTOP_ROOT/staging
+echo $LUNA_STAGING
 
 cd $STARTDIR
 
