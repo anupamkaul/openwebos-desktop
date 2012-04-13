@@ -2,6 +2,15 @@
 
 . ./common/envsetup.sh
 
-. ./common/makesetup.sh
+NAME=$1
+PROCCOUNT=$2
 
-build_target $WEBOS_DESKTOP_ROOT $1 $2
+cd $WEBOS_DESKTOP_ROOT/$NAME
+cmake . -DCMAKE_INSTALL_PREFIX=$LUNA_STAGING -DCMAKE_BUILD_TYPE=RELEASE
+make -j$PROCCOUNT
+#make install
+
+echo "STARTDIR IS $STARTDIR"
+cd $STARTDIR
+
+
